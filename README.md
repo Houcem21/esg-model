@@ -1,4 +1,4 @@
-"Do higher ESG scores lead to higher ROA in Danish companies?"
+Do higher ESG scores lead to higher ROA in Danish companies?
 
 Dependent Variable (Y): RETURN_ON_ASSET
 
