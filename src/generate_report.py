@@ -8,7 +8,7 @@ summary_path = os.path.join(base_path, 'regression_summary.txt')
 report_path = os.path.join(base_path, 'final_report.md')
 
 # Read regression output
-with open(summary_path, 'r') as f:
+with open(summary_path, 'r', encoding='utf-8') as f:
     regression_text = f.read()
 
 # Build markdown report
@@ -49,10 +49,10 @@ This analysis evaluates how ESG scores relate to financial performance (ROA) in 
 ![Dashboard](final_dashboard.png)
 
 ---
-**✅ Analysis Complete.** All plots, models, and diagnostics are now part of this report.
+Analysis Complete. All plots, models, and diagnostics are now part of this report.
 """
 
-with open(report_path, 'w') as f:
+with open(report_path, 'w', encoding='utf-8') as f:
     f.write(report)
 
 print("✅ Markdown report saved as 'final_report.md'")

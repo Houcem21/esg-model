@@ -27,18 +27,18 @@ This analysis evaluates how ESG scores relate to financial performance (ROA) in 
 ```
                           PanelOLS Estimation Summary                           
 ================================================================================
-Dep. Variable:        RETURN_ON_ASSET   R-squared:                        0.0482
-Estimator:                   PanelOLS   R-squared (Between):             -0.8073
-No. Observations:                 123   R-squared (Within):               0.0482
-Date:                Tue, Apr 22 2025   R-squared (Overall):             -0.5030
-Time:                        18:44:53   Log-likelihood                   -348.12
+Dep. Variable:        RETURN_ON_ASSET   R-squared:                        0.0191
+Estimator:                   PanelOLS   R-squared (Between):             -0.1433
+No. Observations:                 123   R-squared (Within):               0.0191
+Date:                Tue, Apr 22 2025   R-squared (Overall):             -0.0845
+Time:                        19:42:26   Log-likelihood                   -349.97
 Cov. Estimator:                Robust                                           
-                                        F-statistic:                      1.5034
-Entities:                          31   P-value                           0.2192
+                                        F-statistic:                      0.5784
+Entities:                          31   P-value                           0.6307
 Avg Obs:                       3.9677   Distribution:                    F(3,89)
 Min Obs:                       3.0000                                           
-Max Obs:                       4.0000   F-statistic (robust):             1.2670
-                                        P-value                           0.2906
+Max Obs:                       4.0000   F-statistic (robust):             0.5214
+                                        P-value                           0.6687
 Time periods:                       4   Distribution:                    F(3,89)
 Avg Obs:                       30.750                                           
 Min Obs:                       30.000                                           
@@ -48,13 +48,13 @@ Max Obs:                       31.000
 ==================================================================================
                 Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
 ----------------------------------------------------------------------------------
-const              41.012     35.728     1.1479     0.2541     -29.978      112.00
-ESG_SCORE         -1.2543     1.4177    -0.8848     0.3787     -4.0712      1.5626
-log_assets        -2.5219     3.6825    -0.6848     0.4952     -9.8390      4.7952
-RD_transformed    -4.9905     3.5946    -1.3883     0.1685     -12.133      2.1518
+const              25.897     39.710     0.6521     0.5160     -53.007      104.80
+ESG_SCORE         -0.6903     1.4629    -0.4719     0.6382     -3.5971      2.2165
+log_assets        -1.9565     3.8817    -0.5040     0.6155     -9.6694      5.7563
+RD_transformed     2.0081     2.9320     0.6849     0.4952     -3.8177      7.8339
 ==================================================================================
 
-F-test for Poolability: 4.0706
+F-test for Poolability: 3.7595
 P-value: 0.0000
 Distribution: F(30,89)
 
@@ -68,4 +68,4 @@ Included effects: Entity
 ![Dashboard](final_dashboard.png)
 
 ---
-**✅ Analysis Complete.** All plots, models, and diagnostics are now part of this report.
+Analysis Complete. All plots, models, and diagnostics are now part of this report.
